@@ -444,7 +444,6 @@ indexReference <- function( organism, type, version, location, aligner, refresh 
 }
 
 
-# organism = "Homo_sapiens", version="GRCh37.60", type="genome"/"transcriptome", location="/ebi/microarray/home/biocep/sequencing"; aligner="bowtie"
 prepareReference <- function( organism, version = "current", type = c("genome", "transcriptome"), 
         location = getDefaultReferenceDir(), aligner = c("bwa", "bowtie", "tophat"), refresh = FALSE, run = TRUE ) {
     
@@ -478,7 +477,6 @@ prepareReference <- function( organism, version = "current", type = c("genome", 
     return( version )
 }
 
-# organism = "Homo_sapiens"  version="GRCh37.60" location="/ebi/microarray/home/biocep/sequencing" aligner="bowtie"
 prepareAnnotation <- function( organism, version = "current", 
         location = getDefaultReferenceDir(), refresh = FALSE, run = TRUE ) {
     

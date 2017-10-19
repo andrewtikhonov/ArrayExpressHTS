@@ -28,11 +28,11 @@ initEnvironmentVariables <- function() {
     trace.enter("initEnvironmentVariables");
     on.exit({ trace.exit() })
     
-    addPathToPATH("/ebi/microarray/home/biocep/local/lib64/R/lib");
-    addPathToPATH("/ebi/microarray/home/biocep/local/lib64/R/bin");
-    addPathToPATH("/ebi/microarray/home/biocep/local/bin");
-    addPathToPATH("/ebi/microarray/sw/bin");
-    addPathToPATH("/ebi/research/software/Linux_x86_64/opt/java/jdk1.6/bin");
+    addPathToPATH("/lib64/R/lib");
+    addPathToPATH("/lib64/R/bin");
+    addPathToPATH("/local/bin");
+    addPathToPATH("/bin");
+    addPathToPATH("/java/jdk1.6/bin");
     addPathToPATH("/usr/local/bin");
     addPathToPATH("/bin");
     addPathToPATH("/usr/bin");

@@ -593,8 +593,7 @@ getAEExperimentPathBase = function() {
     trace.enter("getAEExperimentPathBase");
     on.exit({ trace.exit() })
     
-    #/ebi/ftp/pub/databases/microarray/data/experiment/MEXP/E-MEXP-511
-    '/ebi/ftp/pub/databases/microarray/data/experiment';
+    '/data/experiment';
 }
 
 # create SDRF file name from accession,

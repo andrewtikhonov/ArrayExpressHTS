@@ -245,7 +245,7 @@ createServerLog <- function(x, logfolder, name) {
         #
         logname = paste(name, jobid, hostname, sep="-")
         
-        storage = "/ebi/microarray/home/biocep/service/VirtualRWorkbench/";
+        storage = "/storage";
         
         loglog = paste("rcloud-server.", jobid, ".log", sep="");
         lsferr = paste(jobid, ".err", sep="");

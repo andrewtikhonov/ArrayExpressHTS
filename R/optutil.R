@@ -30,7 +30,7 @@ initPipelineOptions <- function() {
     # define reference and toolbase
     #
     refoptionlist = list(
-        "ArrayExpressHTS.reference" = c("/ebi/microarray/home/biocep/service/sequencing", "/ebi/rcloud/sequencing"));
+        "ArrayExpressHTS.reference" = c("/sequencing", "/sequencing"));
     
     
     log.info("Setting Options Step 1");
@@ -39,7 +39,7 @@ initPipelineOptions <- function() {
     checkAndDefineReferencePath(refoptionlist);
     
     baseoptionlist = list(
-        "ArrayExpressHTS.toolbase"  = c("/ebi/rcloud/local/tools", "/ebi/microarray/home/biocep/local/tools"));
+        "ArrayExpressHTS.toolbase"  = c("/local/tools", "/local/tools"));
     
     
     log.info("Setting Options Step 2");
@@ -49,14 +49,14 @@ initPipelineOptions <- function() {
     
     # experimental versions
     tooloptionlist = list(
-            "ArrayExpressHTS.fasta_formatter" = "/ebi/microarray/home/biocep/local/tools/fastx-toolkit-0.0.13",
-            "ArrayExpressHTS.cufflinks"       = "/ebi/microarray/home/biocep/local/tools/cufflinks-1.1.0.Linux_x86_64",
-            "ArrayExpressHTS.samtools"        = "/ebi/microarray/home/biocep/local/tools/samtools-0.1.18",
-            "ArrayExpressHTS.bwa"             = "/ebi/microarray/home/biocep/local/tools/bwa-0.5.9",
-            "ArrayExpressHTS.mmseq"           = "/ebi/microarray/home/biocep/local/tools/mmseq_0.9.14",
-            "ArrayExpressHTS.bam2hits"        = "/ebi/microarray/home/biocep/local/tools/mmseq_0.9.14",
-            "ArrayExpressHTS.bowtie"          = "/ebi/microarray/home/biocep/local/tools/bowtie-0.12.7",
-            "ArrayExpressHTS.tophat"          = "/ebi/microarray/home/biocep/local/tools/tophat-1.3.2.Linux_x86_64");
+            "ArrayExpressHTS.fasta_formatter" = "/local/tools/fastx-toolkit-0.0.13",
+            "ArrayExpressHTS.cufflinks"       = "/local/tools/cufflinks-1.1.0.Linux_x86_64",
+            "ArrayExpressHTS.samtools"        = "/local/tools/samtools-0.1.18",
+            "ArrayExpressHTS.bwa"             = "/local/tools/bwa-0.5.9",
+            "ArrayExpressHTS.mmseq"           = "/local/tools/mmseq_0.9.14",
+            "ArrayExpressHTS.bam2hits"        = "/local/tools/mmseq_0.9.14",
+            "ArrayExpressHTS.bowtie"          = "/local/tools/bowtie-0.12.7",
+            "ArrayExpressHTS.tophat"          = "/local/tools/tophat-1.3.2.Linux_x86_64");
     
     
     log.info("Setting Options Step 3");
